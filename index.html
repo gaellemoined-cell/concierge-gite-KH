@@ -6,8 +6,8 @@
     <title>Concierge Gîte Kerhuon</title>
     <style>
         body { 
-            font-family: sans-serif; 
-            background-color: #f4f4f4; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f6; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
@@ -15,17 +15,30 @@
             margin: 0; 
             text-align: center;
         }
-        h1 { color: #333; padding: 20px; }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 80%;
+        }
+        h1 { color: #2c3e50; font-size: 1.5rem; line-height: 1.4; }
+        p { color: #7f8c8d; margin-top: 1rem; }
+        .hint { color: #3498db; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenue au Gîte de Kerhuon - Votre concierge IA est à votre écoute en bas à droite !</h1>
+    <div class="container">
+        <h1>Bienvenue au Gîte de Kerhuon</h1>
+        <p>Votre concierge IA est à votre écoute pour faciliter votre séjour.</p>
+        <p class="hint">Cliquez sur la bulle en bas à droite pour commencer !</p>
+    </div>
 
     <script
       data-embed-id="59cbcfe7-3669-4b78-a452-340be8ac03a6"
-      data-base-api-url="http://213.210.20.81:3001/api/embed"
-      src="http://213.210.20.81:3001/embed/anythingllm-chat-widget.min.js">
+      data-base-api-url="https://corsproxy.io/?http://213.210.20.81:3001/api/embed"
+      src="https://corsproxy.io/?http://213.210.20.81:3001/embed/anythingllm-chat-widget.min.js">
     </script>
     
 </body>
